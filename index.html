@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* ป้องกัน Scrollbar ซ้อน */
+        }
+        .full-screen-iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            z-index: 999999; /* ให้มั่นใจว่าอยู่บนสุด */
+        }
+    </style>
+</head>
+<body>
+
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbyb5O6BME6zuRSi7LeJPVgueTgUkgJWkCmwY8dDgjXItva-QaZUBcjKeIsL88j4M0g0Tg/exec" 
+        class="full-screen-iframe"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; camera; microphone; geolocation" 
+        allowfullscreen>
+    </iframe>
+
+</body>
+</html>
